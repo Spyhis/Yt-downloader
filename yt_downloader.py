@@ -4,7 +4,6 @@ from tkinter import *
 from pyperclip import paste
 from time import sleep
 import threading
-from customtkinter import *
 from tkinter import ttk
 import sqlite3
 from tkinter import filedialog
@@ -14,7 +13,6 @@ cursor = con.cursor()
 
 cursor.execute("CREATE TABLE IF NOT EXISTS ytsaving (directory TEXT, kontrol INT, language TEXT)")
 con.commit()
-
 
 window = Tk()
 window.geometry("1030x720")
